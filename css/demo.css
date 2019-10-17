@@ -50,14 +50,14 @@ html {
 header{
   overflow:hidden;
  	clear:both;
-	background-color: #01f4c5;
+	background-color: #01f4c9;
   min-height: 12vh;
   color: #fff;
 	display: flex;
 }
 
 .logo{
-padding-top: 7em;
+padding-top: 7.5em;
 padding-left: 10em;
 display: flex;
 align-items: center;
@@ -67,10 +67,6 @@ align-items: center;
 font-size: 1.6em;
 padding-left: 0.5em;
 font-weight: bold;
-}
-
-h1{
-	padding-left:4em;
 }
 
 .wrapper{
@@ -88,8 +84,14 @@ h1{
 }
 
 .media-block{
-	padding-left: 15em;
+	padding-left: 10em;
 	padding-bottom: 0em;
+}
+.media-block h1{
+	position: absolute;
+  padding-left: 1em;
+	padding-top: 0.5em;
+	color: rgb(22,22,82);
 }
 
 /* Main styles */
@@ -232,7 +234,7 @@ h1{
 	font-variant: normal;
 	text-align: center;
 	text-transform: none;
-color: #c88dab
+color: #c88dab;
 	speak: none;
 	-webkit-font-smoothing: antialiased;
 }

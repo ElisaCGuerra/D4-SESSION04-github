@@ -1,11 +1,210 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-    <img src="images/axolotl.png" alt="Axolotl in space">
-  </head>
-  <body>
-<p>paragraph</p>
-  </body>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sophie the bee</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="icone.png">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+
+
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class=" ">
+			<div class="">
+			<div class="logo">
+				<img src="images/logobee.png" alt="Logo bee">
+				<span>Sophie <br>the Bee</br></span>
+			</div>
+			<h1>How bees participate<br>in pollination</br>
+			</h1>
+			</div>
+
+			<div class="media-block">
+				<video autoplay muted loop class="wrapper__video"="video">
+
+			<source src="medias/beeheader.webm"
+							type="video/webm">
+
+			<source src="medias/beeheader.mp4"
+							type="video/mp4">
+
+			Sorry, your browser doesn't support embedded videos.
+		</video>
+		</div>
+
+		</header>
+
+
+
+
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image rounded" src="images/flowers.jpg" alt="Flowers" />
+						<div class="preview">
+
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Flowers, bee's best friends.</span> </h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image rounded" src="images/beepollen.jpg" alt="Bee transporting pollen" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Cupidon's bee.</span></h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<video>
+
+					<source class="content__item-img rounded-right"
+					src="medias/flowerwebm.webm"
+									type="video/webm">
+
+					<source class="content__item-img rounded-right"
+					src="medias/flowerwebm.mp4"
+									type="video/mp4">
+
+					Sorry, your browser doesn't support embedded videos.
+				</video>
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Flower birth.</span></h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image rounded" src="images/orange.jpg" alt="Orange" />
+						<div class="preview">
+
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Fruits</span></h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image rounded" src="images/bear.jpg" alt="Hive" />
+						<div class="preview rounded">
+
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Honey</span></h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+			<img class="content__item-img rounded-right" src="images/hive.jpg"" alt="Bee out of the hive" />
+				<div class="content__item-inner">
+					<h2>Out of the hive</h2>
+					<p>When bees go out of the hive, they're going to eat. They're looking for flowers with nectar.<br>To eat, the bee plunges its trunk inside the pistil of the flower and sucks the nectar. She then stores it in her jabot (it's a small pocket that is in her stomach).</br>
+
+The nectar that has been harvested is brought back to the hive where it's rumored by other bees. Thus, it mixes with saliva and turns into honey. This honey is then deposited in the cells of the hive. It will be used to feed the larvae (baby bees).</p>
+					<p><a href="https://en.wikipedia.org/wiki/Pollinator">Learn more &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<video>
+
+			<source class="content__item-img rounded-right"
+			src="medias/beelove.webm"
+							type="video/webm">
+
+			<source class="content__item-img rounded-right"
+			src="medias/beelove.mp4"
+							type="video/mp4">
+
+			Sorry, your browser doesn't support embedded videos.
+		</video>
+
+				<div class="content__item-inner">
+
+					<h2>Pollen transport</h2>
+					<p>The pollen of the flowers cling to the little hairs of the bees when they forage.
+
+<br>When she goes foraging another flower, she brings the pollen (the dad) of the flower to the pistillus of the next flower (the mother). The pistillus is the small stem inside the flower.
+Flowers contain pollen and a pistillus, but they need bees to meet from one to an other.</br></p>
+					<p><a href="https://en.wikipedia.org/wiki/Pollination">Learn more &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<video>
+
+			<source class="content__item-img rounded-right"
+			src="medias/growingflower.webm"
+							type="video/webm">
+
+			<source class="content__item-img rounded-right"
+			src="medias/growingflower.mp4"
+							type="video/mp4">
+
+			Sorry, your browser doesn't support embedded videos.
+		</video>
+				<div class="content__item-inner">
+					<h2>The growing flower</h2>
+
+					<p>When the bee put the pollen inside the pistillus, it will create a seed, which will fall and grow up to become a flower in turn.</p>
+					<p><a href="https://en.wikipedia.org/wiki/Pollination">Learn more&xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/vegetables.jpg"" alt="Vegetables" />
+				<div class="content__item-inner">
+					<h2>The cycle</h2>
+					<p>When the flower finished to grow up, the cycle start again. The bee can pick up the pollen to bring him to the pistillus of another flower. Those flowers transform in fruits and vegetables. So without bees, we cannot eat. <br><strong>You have to really take care of bees, they are precious for humans !</strong></br></p>
+					<p><a href="https://en.wikipedia.org/wiki/Pollinationtl">Learn more &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/honey.jpg" alt="Honey" />
+				<div class="content__item-inner">
+					<h2>Sweety</h2>
+					<p>To create honey, bees eat some flower's nectar, that they bring to the hive. Here, another bee take the nectar and put it in the hive at the right place. Than, guardian bees will take care of the honey until it is good to eat.
+					<p><a href="https://en.wikipedia.org/wiki/Honey">Learn more about fabrication of honey &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>
